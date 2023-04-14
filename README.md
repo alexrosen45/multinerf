@@ -31,6 +31,9 @@ conda activate multinerf
 conda install pip
 pip install --upgrade pip
 
+# Note: If on Windows, install jax using pip first
+pip install "jax[cpu]===0.3.14" -f https://whls.blob.core.windows.net/unstable/index.html --use-deprecated legacy-resolver
+
 # Install requirements.
 pip install -r requirements.txt
 
